@@ -1,4 +1,18 @@
 body,html { font-family: 'Source Sans Pro', sans-serif; background: #fafafa; margin: 0; padding: 0; }
 h1 { font-size: 30px; font-weight: 700; }
 
-.wrapper { width: 80%; height: auto; padding: 10%; text-align: center; color:#2e2c28; }
+.wrapper {
+    grid-template-areas: 'intro';
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+
+.intro {
+    grid-area: intro;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+}
